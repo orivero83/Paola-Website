@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paola Web-Site!</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <header>
+                <a href="#" class="logo">Paola Vega</a>
+                <ul>
+
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </header>
+
+            <div class="content">
+                <h4>About me</h4>
+                <p>
+                    Experienced Global Trade Compliance Professional with Proven Project Management Skills.
+                    Recognized for expertise in import/export controls, logistics, implementation of compliance
+                    strategies,
+                    and driving cost optimization. Skilled in leading cross-functional teams and successfully managing
+                    projects to deliver impactful results. Proficient in data analysis, employing LEAN principles to
+                    streamline processes, and fostering a collaborative work environment. Fluent in English, Spanish,
+                    and
+                    Portuguese.
+                </p>
+
+            </div>
+
+            <div class="imgBx">
+                <img class="imgBx" src="./PaoSinFondo.png" alt="Foto Paola">
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ----------------------------- Second part ----------------------------- -->
+    <div id="contact"></div>
+    <section class="section">
+        <div class="container2">
+        <header class="header">
+                <a href="#" class="logo">Contact Me!</a>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+
+                </ul>
+            </header>
+
+            <div class="content2">
+            
+                <p>
+                    <div class="contact-form">
+                        <form id="form">
+                            <input type="text" name="sendername" id="sendername" placeholder="Sender name" required>
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                            <textarea type="text" name="message" id="message" cols="30" rows="10"
+                                placeholder="Enter Your Message" required></textarea>
+                            <input class="send" type="submit" id="button" value="Send Email">
+                            <div id="messageBox" class="message-box"></div>
+                        </form>
+                    </div>
+                </p>
+
+            </div>
+
+           
+
+            <ul class="sci">
+                <li><a href="https://www.linkedin.com/in/paola-vega-internationaltrade/?originalSubdomain=co"
+                        target="_blank" rel="noopener"><img src="./linkedinC50.png" alt="linkedin"></a></li>
+                <li><a href="https://www.facebook.com/miluyours"
+                        target="_blank" rel="noopener"><img src="./facebook50.png" alt="facebook"></a></li>
+                <li><a href="https://www.instagram.com/miluyours/"
+                        target="_blank" rel="noopener"><img src="./instagram50.png" alt="instagram"></a></li>
+                <li><a href="https://wa.me/+573223669127" target="_blank" rel="noopener"><img src="./whatsapp50.png"
+                            alt="whatsapp"></a></li>
+            </ul>
+
+
+            <div class="copyrightText">
+                Copyright © 2023 Oscar Rivero. All Rights Reserved.
+            </div>
+
+        </div>
+    </section>
+
+    <div class="contenedorSci">
+    <ul class="sci">
+        <li><a href="https://www.linkedin.com/in/paola-vega-internationaltrade/?originalSubdomain=co"
+                target="_blank" rel="noopener"><img src="./linkedinC50.png" alt="linkedin"></a></li>
+        <li><a href="https://www.facebook.com/miluyours"
+                target="_blank" rel="noopener"><img src="./facebook50.png" alt="facebook"></a></li>
+        <li><a href="https://www.instagram.com/miluyours/"
+                target="_blank" rel="noopener"><img src="./instagram50.png" alt="instagram"></a></li>
+        <li><a href="https://wa.me/+573223669127" target="_blank" rel="noopener"><img src="./whatsapp50.png"
+                    alt="whatsapp"></a></li>
+    </ul>
+</div>
+
+
+
+    <!-- ---------------------------- conectando js ---------------------------- -->
+    <script src="script.js"></script>
+
+
+
+    <!--emailjs  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('SefSbCS1D2dlw90kp')
+    </script>
+
+
+
+</body>
+
+</html>
