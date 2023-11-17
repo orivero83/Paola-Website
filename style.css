@@ -174,7 +174,7 @@ header ul li a:hover {
     border-radius: 50%;
     margin: 5px 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .sci li a img {
@@ -209,7 +209,7 @@ header ul li a:hover {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    padding-left: 300px;
+    padding-left: 50px;
 }
 
 
@@ -268,6 +268,28 @@ form textarea:focus {
         position: relative;
         width: calc(100% - 20px);
     }
+
+    .container2
+    {
+        display: none;
+    }
+
+    html,
+body {
+    overflow-y: visible;
+}
+
+
+.contenedorSci {
+    display: block;
+    background-color: transparent;
+}
+
+.sci 
+{
+    background: transparent;
+}
+
 }
 
 
@@ -363,12 +385,6 @@ form textarea:focus {
 
 @media (max-width: 600px) {
 
-    html,
-    body {
-        overflow-y: visible;
-        overflow-x: hidden;
-    }
-
     .content h4 {
         font-size: 1.2em;
         color: #8a2435;
@@ -384,100 +400,19 @@ form textarea:focus {
     }
 }
 
-
-
-/* ----------------------------- 400 ----------------------------- */
-
 @media (max-width: 400px) {
 
-    section {
-        padding: 50px 10px;
-    }
-
-    .container {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-        margin-top: 500px;
-    }
-
-    .container .content {
-        transform: translateX(0px);
-        max-width: 100%;
-        padding: 30px;
-        margin-top: 10px;
-    }
-
-
-
-    header ul {
-        margin-top: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    header ul li {
-        margin: 2px;
-    }
-
-    header ul li a {
-        display: inline-block;
-    }
-
-    .imgBx {
-        margin-bottom: 50px;
-    }
-
-    .content a {
-        font-size: 1em;
-        padding: 10px 20px;
-    }
-
-    @keyframes animate {
-
-        0%,
-        100% {
-            transform: translateY(-20px);
-        }
-
-        50% {
-            transform: translateY(20px);
-        }
-    }
-
-
-
-    .sci {
-        position: relative;
-        flex-direction: row;
-        left: 0;
-    }
-
-    .sci li a {
-        margin: 0 10px;
-    }
-
-    .copyrightText {
-        position: relative;
-        bottom: initial;
-        left: inherit;
-        width: 100%;
+    .content h4 {
+        font-size: 1.2em;
         color: #8a2435;
-        text-align: center;
-        margin-top: 20px;
     }
 
-
-    /* ------------------------------- formulario ------------------------------- */
-
-    .section {
-        display: none;
+    .content p {
+        font-size: 1em;
+        color: #8a2435;
     }
 
-    .contenedorSci {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+    .imgBx img {
+        max-width: 300px;
     }
-
 }
