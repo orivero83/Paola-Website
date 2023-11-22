@@ -7,14 +7,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.contenedorSci {
-    display: none;
-}
+
 
 html,
 body {
     overflow-y: hidden;
     overflow-x: hidden;
+}
+
+
+.SectionQuery {
+    display: none;
 }
 
 section {
@@ -261,34 +264,31 @@ form textarea:focus {
     color: #8a2435;
 }
 
-/* --------------------------------- Queries -------------------------------- */
-
+/* --------------------------------- QUERIES ------------
 @media (max-width: 1200px) {
     .container {
         position: relative;
         width: calc(100% - 20px);
     }
 
-    .container2
-    {
+    .container2 {
         display: none;
     }
 
     html,
-body {
-    overflow-y: visible;
-}
+    body {
+        overflow-y: visible;
+    }
 
 
-.contenedorSci {
-    display: block;
-    background-color: transparent;
-}
+    .contenedorSci {
+        display: block;
+        background-color: transparent;
+    }
 
-.sci 
-{
-    background: transparent;
-}
+    .sci {
+        background: transparent;
+    }
 
 }
 
@@ -399,20 +399,147 @@ body {
         max-width: 300px;
     }
 }
+-------------------- */
 
+
+
+
+/* Estilos generales aquí */
 @media (max-width: 400px) {
 
-    .content h4 {
+    html,
+    body {
+        overflow-y: visible;
+        height: 200vh;
+        width: 100%;
+    }
+
+    section {
+        display: none;
+    }
+
+    .section {
+        display: none;
+    }
+
+    .SectionQuery {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+      
+        height: 200vh;
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        padding-right: 20px;
+    }
+
+    .container-SectionQuery {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+  
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        padding-top: 100px;
+    }
+
+
+    .headerSectionQuery {
+        position: relative;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+      
+        height: 11%;
+        width: 85%;
+
+    }
+
+    .logoSectionQuery {
+        color: #8a2435;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+
+    .ulSectionQuery {
+        display: none;
+    }
+
+    .h4SectionQuery {
         font-size: 1.2em;
         color: #8a2435;
     }
 
-    .content p {
-        font-size: 1em;
+    .pSectionQuery {
+        font-size: 1.2em;
         color: #8a2435;
     }
 
-    .imgBx img {
-        max-width: 300px;
+
+    .containerIMGSectionQuery {
+        height: 90%;
+        width: 50%;
+    
+        margin-top: 30px;
     }
+
+    .imgBxSectionQuery {
+        height: 23%;
+        width: 220%;
+
+     
+    }
+
+    .copyrightTextSectionQuery {
+        margin-top: 20px;
+        font-size: 1.2em;
+        color: #8a2435;
+    }
+
+    .sciSectionQuery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+    }
+    
+    .LisciSectionQueryA {
+       
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .LisciSectionQueryImg {
+        transform: scale(0.6);
+        transition: 0.5s;
+    }
+
+    .LisciSectionQueryImg:hover {
+        transform: scale(0.6) rotate(360deg);
+    }
+
 }
