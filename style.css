@@ -25,7 +25,6 @@ section {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url(./bosque1000.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -406,12 +405,12 @@ form textarea:focus {
 
 /* Estilos generales aquí */
 @media (max-width: 400px) {
-
     html,
     body {
         overflow-y: visible;
         height: 200vh;
         width: 100%;
+        background-image: url(./bosque1000.jpg);
     }
 
     section {
@@ -429,12 +428,13 @@ form textarea:focus {
         align-content: center;
         align-items: center;
         text-align: center;
-      
+
         height: 200vh;
         width: 100%;
-        margin: 10px;
+
         padding: 10px;
         padding-right: 20px;
+        background-image: rgb(238, 231, 231, 0.5);
     }
 
     .container-SectionQuery {
@@ -444,12 +444,12 @@ form textarea:focus {
         align-content: center;
         align-items: center;
         text-align: center;
-  
+
         height: 100%;
         width: 100%;
         margin: 0;
         padding: 10px;
-        padding-top: 100px;
+        padding-top: 70px;
     }
 
 
@@ -461,8 +461,8 @@ form textarea:focus {
         align-content: center;
         align-items: center;
         text-align: center;
-      
-        height: 11%;
+
+        height: 8%;
         width: 85%;
 
     }
@@ -479,35 +479,43 @@ form textarea:focus {
     }
 
     .h4SectionQuery {
+        background-color: rgba(229, 233, 235, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
         font-size: 1.2em;
         color: #8a2435;
+        border-radius: 15px;
+
+        margin-bottom: 10px;
+        padding: 10px;
     }
 
     .pSectionQuery {
+        background-color: rgba(224, 229, 233, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
         font-size: 1.2em;
-        color: #8a2435;
+        color: #651623;
+        border-radius: 15px;
+        padding: 15px;
+        text-shadow: 2px 2px 4px #f2eded;
     }
 
 
     .containerIMGSectionQuery {
-        height: 90%;
-        width: 50%;
-    
-        margin-top: 30px;
+        margin-top: -250px;
+        width: 100%;
     }
 
     .imgBxSectionQuery {
-        height: 23%;
-        width: 220%;
-
-     
+        height: 350px;
+        width: 450px;
+        margin-left: -50px;
     }
 
-    .copyrightTextSectionQuery {
-        margin-top: 20px;
-        font-size: 1.2em;
-        color: #8a2435;
-    }
+ 
 
     .sciSectionQuery {
         display: flex;
@@ -520,9 +528,9 @@ form textarea:focus {
         margin: 0;
         text-decoration: none;
     }
-    
+
     .LisciSectionQueryA {
-       
+
         width: 50px;
         height: 50px;
         background: #fff;
@@ -532,7 +540,7 @@ form textarea:focus {
         border-radius: 50%;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
-    
+
     .LisciSectionQueryImg {
         transform: scale(0.6);
         transition: 0.5s;
@@ -540,6 +548,12 @@ form textarea:focus {
 
     .LisciSectionQueryImg:hover {
         transform: scale(0.6) rotate(360deg);
+    }
+
+    .copyrightTextSectionQuery {
+        margin-top: 20px;
+        font-size: 1.2em;
+        color: white;
     }
 
 }
