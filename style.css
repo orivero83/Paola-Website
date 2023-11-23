@@ -462,7 +462,7 @@ form textarea:focus {
         align-items: center;
         text-align: center;
 
-        height: 5%;
+        height: 6%;
         width: 85%;
 
     }
@@ -513,7 +513,7 @@ form textarea:focus {
         height: 310px;
         width: 450px;
         margin-left: -50px;
-        margin-bottom: 50px;
+        margin-bottom: 75px;
     }
 
  
